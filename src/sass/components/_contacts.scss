@@ -1,0 +1,118 @@
+@import "../abstracts/variables";
+
+.contact {
+  background: #ffffff;
+
+  &__form {
+    padding: 0;
+  }
+
+  box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08);
+}
+
+.contact-input {
+  &__input {
+    display: block;
+    border: 1px solid #dddddd;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #aaaaaa;
+    }
+  }
+
+  &__button {
+    width: 206px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & span{
+      font-weight: 400;
+    }
+  }
+}
+
+.contact-title {
+  color: #000000;
+}
+
+@media (max-width: $screen-large) {
+  .contact {
+    margin-top: 149px;
+    margin-bottom: 80px;
+    padding: 20px;
+  }
+
+  .contact-input {
+    padding: 16px;
+
+    &__input {
+      margin: 20px auto 16px auto;
+      padding: 10px 16px;
+      width: stretch;
+
+      &::placeholder {
+        width: 256px;
+      }
+    }
+
+    &__button {
+      width: stretch;
+      height: 40px;
+      & span{
+        font-size: 18px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-large) {
+  .contact {
+    padding: 81px 60px;
+    z-index: 3;
+    width: 870px;
+    margin-top: 90px;
+    margin-bottom: 200px;
+  }
+
+  .contact-title {
+    width: 650px;
+    height: 80px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+    &__line {
+      margin-top: 26px;
+    }
+  }
+
+  .contact-input {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__input {
+      padding: 16px 32px;
+      width: 534px;
+      height: 56px;
+
+      &::placeholder {
+        width: 470px;
+      }
+    }
+
+    &__button {
+      justify-self: flex-end;
+      & span{
+        font-size: 20px;
+        margin-right: 32px;
+      }
+    }
+  }
+}

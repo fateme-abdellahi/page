@@ -1,0 +1,137 @@
+@import "../abstracts/variables";
+.services {
+  &--bg{
+    background-image: url("../icons/bg-section1.svg");
+  }
+}
+.service {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  &__list-container{
+    padding: 0;
+  }
+  &__list-title {
+    font-weight: 600;
+    display: flex;
+  }
+  &__list-title::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 6px solid $primary;
+    margin-right: 20px;
+  }
+  &__title-container {
+    border-bottom: 2px solid #dddddd;
+    display: flex;
+  }
+  &__number {
+    display: flex;
+    color: #dddddd;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 28px;
+    align-items: center;
+  }
+  &__list {
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  &__title {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+  }
+  &__description {
+    padding-left: 30px;
+    border-left: 2px solid #dddddd;
+    margin-left: 9px;
+  }
+  &__img{
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: $screen-large) {
+  .service {
+    &__title-container {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+    &__number {
+      margin-left: -15px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      width: 129px;
+      z-index: 1;
+    }
+    &__list-title {
+      font-size: 20px;
+    }
+    &__img{
+      &-container{
+        margin-bottom:-109px ;
+      }
+    }
+  }
+  .services {
+    padding-top: 40px;
+    &__title {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+}
+@media (min-width: $screen-large) {
+  .service {
+    position: relative;
+    &__list {
+      margin-right: 75px;
+    }
+    &__title-container {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+    &__number {
+      margin-left: -30px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+      width: 158px;
+      z-index: 1;
+    }
+    &__list-title {
+      font-size: 18px;
+    }
+    &__img{
+      width: 755px;
+      height: 500px;
+      &-container{
+        position: absolute;
+        bottom: -282px;;
+        right: 0;
+      }
+    }
+  }
+  .services {
+    padding-top: 90px;
+    &__title {
+      margin-bottom: 90px;
+      margin-top: 90px;
+
+    }
+  }
+}

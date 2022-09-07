@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+nav {
+  background-color: transparent;
+}
+@media(min-width:$screen-large){
+  nav .container{
+    padding: 0;;
+  }
+}
+.nav {
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    color: $link-color;
+    margin-top: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &__link--active {
+    color: $primary;
+  }
+  &__button {
+    width: 170px;
+    height: 44px;
+    margin-top: 16px;
+  }
+}

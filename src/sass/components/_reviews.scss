@@ -1,0 +1,102 @@
+@import "../abstracts/variables";
+.reviews-container{
+  position: relative;
+}
+.review {
+  box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.1);
+  background: #ffffff;
+  padding: 0;
+  flex-shrink: 0;
+  &__info {
+    text-align: left;
+    align-items: center;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    text-align:left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #666666;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+  }
+  &__career {
+    margin-top: 4px;
+    color: #aaaaaa;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__image img {
+    width: 60px;
+    height: 60px;
+  }
+  &__buttons {
+    display: flex;
+    padding:0;
+    justify-content: space-between;
+  }
+}
+@media (max-width: $screen-large) {
+  .reviews-container{
+    margin-bottom:80px;
+  }
+  .reviews-title{
+    margin-bottom: 40px;
+    margin-top: 200px;
+  }
+  .review {
+    width: 328px;
+    padding: 20px;
+    &__details {
+      margin-left: 20px;
+    }
+    &__description {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &__buttons {
+      margin: auto;
+      margin-top:40px;
+      width:96px;
+    }
+    &__button {
+      width:40px;
+      height:40px;
+    }
+  }
+}
+@media (min-width: $screen-large) {
+  .reviews-title{
+    position: relative;
+    margin-bottom: 62px;
+  }
+  .reviews-container{
+    margin-bottom:200px;
+  }
+  .review {
+    width: 370px;
+    padding: 60px;
+    &__details {
+      margin-left: 20px;
+    }
+    &__description {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    &__button {
+      width:44px;
+      height:44px;
+    }
+    &__buttons {
+      margin-top:60px;
+      width:98px;
+    }
+  }
+}

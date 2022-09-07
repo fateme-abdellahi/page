@@ -1,0 +1,73 @@
+@import "../base/reset";
+@import "../base/typography";
+@import "../abstracts/variables";
+@import "../layout/navigation";
+@import "../layout/body";
+@import "../layout/footer";
+@import "../components/button";
+@import "../components/list";
+@import "../components/card";
+@import "../components/introduction";
+@import "../components/about";
+@import "../components/reviews";
+@import "../components/services";
+@import "../components/contacts";
+@import "../components/nav";
+@import "../components/swipper";
+@import "../components/footer";
+
+html{
+  overflow-x: hidden;
+}
+.flex-display{
+  display: flex;
+  padding:0;
+
+}
+.page-title{
+  display:flex;
+}
+.container{
+  overflow:visible;
+}
+@media (max-width: $screen-large) {
+  .page-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .hr-title-line {
+    background-color: $primary;
+    margin: auto;
+    margin-right: 16px;
+    width: 40px;
+    height: 4px;
+  }
+}
+
+@media (min-width: $screen-large) {
+  .container-lg{
+    padding: 0;
+  }
+  .page-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .hr-title-line {
+    background-color: $primary;
+    margin: auto;
+    margin-right: 30px;
+    width: 70px;
+    height: 4px;
+  }
+  body {
+    background-image: url(../icons/bg-section1.svg);
+    background-repeat: no-repeat;
+    background-size: auto 700px;
+  }
+  .d-flex {
+    padding: 0;
+  }
+  
+}
